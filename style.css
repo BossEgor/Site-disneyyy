@@ -1,0 +1,261 @@
+* {
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .clear {
+       clear: both;
+    }
+    main {
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    }
+    .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    
+    }
+    .left-block{
+    width: 630px;
+    
+    float: left;
+    }
+    .right-block {
+    width: 280px;
+    
+    float: right;
+    }
+    .container::after {
+       content: '';
+       display: block;
+       clear: both;
+    }
+    .logo {
+       margin-bottom: 80px;
+    }
+    .left-block-content {
+       padding-left: 80px;
+    }
+    .top-img img {
+       vertical-align: middle;
+       margin-bottom: 12px;
+    }
+    .raiting-holder {
+    width: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    }
+    .raiting-holder::after {
+    content:'';
+    display: block;
+    clear: both;
+    }
+    .btn {
+    background: linear-gradient(90deg, #0D0F42 -2.98%, rgba(9, 14, 113, 0.73) 50%);
+    border-radius: 6px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: 4px;
+    }
+    .btn img {
+    margin: auto;
+    display: block;
+    width: 24px;
+    height: 100;
+    }
+    .raiting-block {
+       float: right;
+       color: #FFFFFF;
+    }
+    .raiting-block__text {
+       display: block;
+    }
+    .raiting-value img, span {
+       vertical-align: middle;
+    }
+    .raiting-value img {
+       transition: 0.4s;
+       filter: grayscale(100%);
+    }
+    .raiting-value img:hover {
+       filter: grayscale(0%);
+       cursor: pointer;
+    }
+    .left-text {
+       font-style: normal;
+       font-weight: 400;
+       font-size: 21px;
+       line-height: 1.4;
+       color: #FFFFFF;
+    }
+    .block-title {
+       color: #FFFFFF;
+       text-align: center;
+       font-size: 32px;
+    }
+    .row::after {
+       content: '';
+       display: block;
+       clear: both;
+    }
+    .img-holder {
+       position: relative;
+       margin-top: 16px;
+    }
+    .img-holder:after {
+       content: '';
+       display: block;
+       clear: both;
+    }
+    .fl {float: left;}
+    .fr {float: right;}
+    .play-btn {
+       position: absolute;
+       top: 50%;
+       left: 0;
+       transform: translate(-50%, -50%);
+       margin: 0;
+       width: 40px;
+       transition: 0.2s;
+    }
+    .play-btn:hover {
+       width: 60px;
+       cursor: pointer;
+    }
+
+    @media (max-width: 1120px) {
+      .container {
+        padding: 0 20px;
+      }
+    }
+    
+    @media (max-width: 992px) {
+    
+      /* Для аудиоблока */
+      .header-info-block {
+        flex-direction: column;
+      }
+    
+      .card-about {
+        align-self: flex-end;
+        margin-top: 60px;
+      }
+    
+      .audio-container {
+        order: -1;
+      }
+    
+      /* Для основного раздела */
+      .course-row {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+      }
+    
+      .course-card {
+        display: flex;
+        margin-bottom: 60px;
+      }
+    
+      .card-big,
+      .card-small {
+        width: 100%;
+      }
+    
+      .img-container,
+      .info-container {
+        width: 50%;
+      }
+    
+      .img-card-1,
+      .img-card-3 {
+        margin-right: 40px;
+      }
+    
+      .img-card-2,
+      .img-card-4 {
+        order: 2;
+        margin-left: 40px;
+      }
+    }
+    
+    @media (max-width: 756px) {
+    
+      /* Для основного раздела */
+      .course-card {
+        flex-direction: column;
+      }
+    
+      .img-card-1,
+      .img-card-3,
+      .img-card-2,
+      .img-card-4 {
+        margin: 0;
+      }
+    
+      .img-container,
+      .info-container {
+        width: 100%;
+      }
+    
+      .img-card-2,
+      .img-card-4 {
+        order: -1;
+      }
+    }
+    
+    @media (max-width: 578px) {
+    
+      /* Для меню */
+      .navigation-holder {
+        display: none;
+      }
+    
+      .mob-btn {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 60px;
+        color: #fff;
+      }
+    
+      /* Заголовок в шапке */
+      .header-title-text {
+        font-size: 60px;
+      }
+    
+      /* Кнопка Join */
+      .join {
+        display: none;
+      }
+    
+      /* Изображение девушки */
+      .card-info-img {
+        max-width: 100%;
+      }
+    
+      /* Для аудиоблока */
+      .audio-holder,
+      .card-about {
+        width: 100%;
+      }
+    
+      .audio-block img {
+        display: none;
+      }
+    
+      .audio-container {
+        padding: 0 42px 0 0;
+      }
+    
+      .control i {
+        height: 48px;
+      }
+    
+      /* Для футера */
+      .course-name {
+        font-size: 24px;
+      }
+    }
